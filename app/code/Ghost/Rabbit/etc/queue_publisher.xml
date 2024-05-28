@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <publisher topic="queue.order.create.db">
+        <connection name="db" exchange="queue-order-exchange-db" />
+    </publisher>
+    <publisher topic="queue.order.create.rabbit">
+        <connection name="amqp" exchange="queue-order-exchange-rabbit" />
+    </publisher>
+</config>

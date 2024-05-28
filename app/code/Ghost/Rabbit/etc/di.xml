@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="LogCustomFile" xsi:type="object">Ghost\CliCommand\Console\Command\CustomLogFile</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <virtualType name="MessageDebugLog" type="Magento\Framework\Logger\Handler\Base">
+        <arguments>
+        <argument name="fileName" xsi:type="string">/var/log/custom-message.log</argument>
+    </arguments>
+    </virtualType>
+    <virtualType name="CustomLogger" type="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+            <item name="debug" xsi:type="object">MessageDebugLog</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="Ghost\CliCommand\Console\Command\CustomLogFile">
+        <arguments>
+            <argument name="name" xsi:type="string">Custom Log</argument>
+            <argument name="logger" xsi:type="object">CustomLogger</argument>
+        </arguments>
+    </type>
+</config>

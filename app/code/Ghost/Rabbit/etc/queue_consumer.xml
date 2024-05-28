@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="QueueOrderCreate"
+              queue="queue_order_create_db"
+              connection="db"
+              handler="Ghost\Rabbit\Model\Consumer::processOrder"/>
+    <consumer name="QueueOrderCreateRabbit"
+              queue="queue_order_create_rabbit"
+              connection="amqp"
+              handler="Ghost\Rabbit\Model\Consumer::processOrder"/>
+</config>

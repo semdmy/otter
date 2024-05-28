@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="queue-order-exchange" type="topic" connection="db">
+        <binding id="QueueOrderCreate" topic="queue.order.create.db" destinationType="queue" destination="queue_order_create_db"/>
+    </exchange>
+    <exchange name="queue-order-exchange-rabbit" type="topic" connection="amqp">
+        <binding id="QueueOrderCreateRabbit" topic="queue.order.create.rabbit" destinationType="queue" destination="queue_order_create_rabbit"/>
+    </exchange>
+</config>
