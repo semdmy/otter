@@ -1,0 +1,5 @@
+website,code,name,is_default
+ghost_website,ghost_store,All Website Store,1
+men_ghost_website,men_new_ghost_store,New Men Website Store,0
+men_ghost_website,men_old_ghost_store,Old Men Website Store,0
+women_ghost_website,women_ghost_store,Women Website Store,0
