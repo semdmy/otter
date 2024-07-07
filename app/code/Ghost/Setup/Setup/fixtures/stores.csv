@@ -1,7 +1,0 @@
-group,code,name,is_default,theme,locale
-ghost_store,ghost_store_view_en,English,1,frontend/Magento/luma,en_GB
-men_new_ghost_store,men_new_ghost_store_view_en,English,0,frontend/Magento/luma,en_US
-men_new_ghost_store,men_new_ghost_store_view_de,Deutch,0,frontend/Ghost/sample,de_DE
-men_old_ghost_store,men_old_ghost_store_view_en,English,0,frontend/Magento/luma,en_US
-men_old_ghost_store,men_old_ghost_store_view_fr,French,0,frontend/Ghost/sample,fr_FR
-women_ghost_store,women_ghost_store_view_en,English,0,frontend/Magento/luma,en_US

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57f98da4be3ea51d218a3099a270c7e8",
+    "content-hash": "11acac9938fb96bc23271395886482cf",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -723,6 +723,41 @@
                 "source": "https://github.com/colinmollenhour/php-redis-session-abstract/tree/v1.7.0"
             },
             "time": "2024-02-03T06:04:45+00:00"
+        },
+        {
+            "name": "community-engineering/language-uk_ua",
+            "version": "0.0.36",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magento-l10n/language-uk_UA.git",
+                "reference": "7f2d6052352d3e1f259f3108449aa87f601aa7c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magento-l10n/language-uk_UA/zipball/7f2d6052352d3e1f259f3108449aa87f601aa7c3",
+                "reference": "7f2d6052352d3e1f259f3108449aa87f601aa7c3",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*"
+            },
+            "type": "magento2-language",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "uk_UA language package.",
+            "support": {
+                "issues": "https://github.com/magento-l10n/language-uk_UA/issues",
+                "source": "https://github.com/magento-l10n/language-uk_UA/tree/v0.0.36"
+            },
+            "time": "2024-04-17T19:55:17+00:00"
         },
         {
             "name": "composer/ca-bundle",
