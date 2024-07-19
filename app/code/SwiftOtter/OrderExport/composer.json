@@ -1,0 +1,19 @@
+{
+    "name": "swiftotter/module-orderexport",
+    "description": "N/A",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "^103",
+        "magento/module-sales": "^103",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SwiftOtter\\OrderExport\\": ""
+        }
+    }
+}
+
